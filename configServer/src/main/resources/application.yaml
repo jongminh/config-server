@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jongminh/config-server.git
+
+security:
+  user:
+    name: {username}
+    password: {password}
