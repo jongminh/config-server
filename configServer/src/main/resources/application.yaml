@@ -3,9 +3,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jongminh/config-server.git
+          uri: ${vap.services.config-repo-git.credentials.uri}
 
 security:
   user:
-    name: {username}
-    password: {password}
+    name: ${vap.services.config-basic-auth.credentials.username}
+    password: ${vap.services.config-basic-auth.credentials.password}
