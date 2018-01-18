@@ -14,3 +14,8 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0
     enableSelfPreservation: false
 
+security:
+  user:
+    name: ${vcap.services.config-basic-auth.credentials.username}
+    password: ${vcap.services.config-basic-auth.credentials.password}
+
