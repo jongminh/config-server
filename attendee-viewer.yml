@@ -1,7 +1,4 @@
 ---
-server:
-  port: 8101
-
 feign:
   hystrix:
     enabled: true
