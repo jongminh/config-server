@@ -12,8 +12,4 @@ eureka:
   instance:
     hostname: ${vcap.application.uris[0]}
     nonSecurePort: 80
-  
-feign:
-  hystrix:
-    enabled: true
 
